@@ -1,26 +1,243 @@
 @import "tailwindcss";
 
+@theme {
+  /* === DUWIN BRAND === */
+  --color-brand-50:  #edf4f7;
+  --color-brand-100: #c8dde7;
+  --color-brand-200: #93bcd0;
+  --color-brand-300: #5e9ab8;
+  --color-brand-400: #3579a0;
+  --color-brand-500: #245e76;
+  --color-brand-600: #1c4d62;
+  --color-brand-700: #153c4d;
+  --color-brand-800: #0e2b38;
+  --color-brand-900: #071922;
+
+  --color-accent-400: #0d89bf;
+  --color-accent-500: #0b76a5;
+
+  --color-neutral-50:  #f8f9fb;
+  --color-neutral-100: #f0f2f5;
+  --color-neutral-200: #e2e6ec;
+  --color-neutral-300: #c8cfd9;
+  --color-neutral-400: #9ba5b4;
+  --color-neutral-500: #6b7585;
+  --color-neutral-600: #4a5568;
+  --color-neutral-700: #2d3748;
+  --color-neutral-800: #1a202c;
+  --color-neutral-900: #0b0b0b;
+
+  --font-heading: var(--font-manrope);
+  --font-body:    var(--font-inter);
+
+  /* Animation tokens */
+  --ease-spring:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.45, 0, 0.55, 1);
+  --dur-fast:     150ms;
+  --dur-base:     250ms;
+  --dur-slow:     500ms;
+  --dur-reveal:   650ms;
+
+  /* Aurora animation */
+  --animate-aurora: aurora 60s linear infinite;
+}
+
+/* Aurora color variables (referenced by the aurora gradient strings) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white:       #ffffff;
+  --black:       #000000;
+  --transparent: transparent;
+  --blue-300:    #93c5fd;
+  --blue-400:    #60a5fa;
+  --blue-500:    #3b82f6;
+  --indigo-300:  #a5b4fc;
+  --violet-200:  #ddd6fe;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── KEYFRAMES ─────────────────────────────────────── */
+
+@keyframes aurora {
+  from { background-position: 50% 50%, 50% 50%; }
+  to   { background-position: 350% 50%, 350% 50%; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-36px); }
+  to   { opacity: 1; transform: translateX(0);     }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(36px); }
+  to   { opacity: 1; transform: translateX(0);    }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1);    }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px);   }
+  50%       { transform: translateY(-8px);  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(36, 94, 118, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(36, 94, 118, 0);  }
+}
+
+@keyframes shimmerSlide {
+  from { background-position: -200% center; }
+  to   { background-position:  200% center; }
+}
+
+
+/* ── SCROLL REVEAL UTILITIES ────────────────────────── */
+
+.reveal         { opacity: 0; }
+.reveal-left    { opacity: 0; }
+.reveal-right   { opacity: 0; }
+.reveal-scale   { opacity: 0; }
+
+.reveal.is-visible {
+  animation: fadeUp    var(--dur-reveal) var(--ease-spring) forwards;
+}
+.reveal-left.is-visible {
+  animation: slideInLeft var(--dur-reveal) var(--ease-spring) forwards;
+}
+.reveal-right.is-visible {
+  animation: slideInRight var(--dur-reveal) var(--ease-spring) forwards;
+}
+.reveal-scale.is-visible {
+  animation: scaleIn   var(--dur-reveal) var(--ease-spring) forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* ── REDUCED MOTION ─────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
   }
 }
 
+/* ── BASE STYLES ─────────────────────────────────────── */
+
+html { scroll-behavior: smooth; }
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  color: #0b0b0b;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  color: #0b0b0b;
+}
+
+:focus-visible {
+  outline: 2px solid #245e76;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── COMPONENT UTILITIES ─────────────────────────────── */
+
+/* Premium card hover */
+.card-hover {
+  transition: transform 300ms var(--ease-spring), box-shadow 300ms ease;
+  cursor: pointer;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(36,94,118,.10), 0 24px 48px rgba(36,94,118,.12);
+}
+
+/* Shimmer text */
+.text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #245e76 0%, #0d89bf 40%, #245e76 60%, #245e76 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerSlide 3s linear infinite;
+}
+
+/* Float animation for badges */
+.float-slow {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Primary button */
+.btn-primary {
+  transition: transform 250ms cubic-bezier(0.22,1,0.36,1), box-shadow 250ms ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(36,94,118,.25), 0 12px 32px rgba(36,94,118,.35) !important;
+}
+.btn-primary:active { transform: translateY(0) scale(0.98); }
+
+/* Outline button */
+.btn-outline {
+  transition: background 200ms ease, border-color 200ms ease, transform 250ms cubic-bezier(0.22,1,0.36,1);
+}
+.btn-outline:hover {
+  background: #edf4f7 !important;
+  border-color: #245e76 !important;
+  transform: translateY(-2px);
+}
+
+/* Feature checklist card */
+.feature-card {
+  transition: border-color 250ms ease, background 250ms ease;
+  border: 1px solid #f0f2f5;
+}
+.feature-card:hover {
+  border-color: #c8dde7 !important;
+  background: #edf4f7 !important;
+}
+
+/* Glow pulse for CTA button */
+.btn-glow:hover {
+  animation: pulseGlow 1.5s ease-in-out infinite;
+}
+
+/* Phone link hover */
+.phone-link { transition: color 200ms ease; color: rgba(255,255,255,0.72); }
+.phone-link:hover { color: rgba(255,255,255,1); }
+
+/* CTA hero button */
+.btn-cta {
+  transition: transform 250ms cubic-bezier(0.22,1,0.36,1), box-shadow 250ms ease;
+}
+.btn-cta:hover { transform: translateY(-2px) scale(1.02); }
