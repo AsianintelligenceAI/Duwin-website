@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, ReactNode } from "react";
+import { useEffect, useRef, ReactNode, ElementType } from "react";
 
 interface Props {
   children: ReactNode;
@@ -10,7 +10,7 @@ interface Props {
   delay?: "delay-100" | "delay-150" | "delay-200" | "delay-300" | "delay-400" | "delay-500" | "delay-600" | "delay-700" | "delay-800";
   /** Extra wrapper classes (layout, spacing, etc.) */
   wrapperClass?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: ElementType;
   threshold?: number;
 }
 
@@ -46,7 +46,6 @@ export default function ScrollReveal({
   const classes = [variant, delay, className].filter(Boolean).join(" ");
 
   return (
-    // @ts-expect-error dynamic tag
     <Tag ref={ref} className={`${classes} ${wrapperClass ?? ""}`.trim()}>
       {children}
     </Tag>
