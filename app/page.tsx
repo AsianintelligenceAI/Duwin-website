@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import ScrollReveal from "@/components/ScrollReveal";
+import InsightsCarousel from "@/components/InsightsCarousel";
 import GradientCard from "@/components/ui/GradientCard";
 import CheckItem from "@/components/ui/CheckItem";
 import { CheckCircle, Calculator, TrendingUp, Landmark } from "lucide-react";
@@ -349,6 +350,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════════════
+          INSIGHTS
+      ═══════════════════════════════════════════════ */}
+      <InsightsCarousel />
 
       {/* ═══════════════════════════════════════════════
           CREDENTIALS BAR
