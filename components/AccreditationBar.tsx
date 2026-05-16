@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const logos = [
-  { src: "/caanz_logo_horizontal.webp", alt: "Chartered Accountants ANZ", w: 130, h: 34 },
-  { src: "/tpa-logo.png",               alt: "Tax Practitioners Board",   w: 78,  h: 34 },
-  { src: "/Xero-logo-hires-RGB.png",    alt: "Xero",                      w: 74,  h: 34 },
-  { src: "/xero-advisor-badge.png",     alt: "Xero Advisor Certified",    w: 34,  h: 34 },
+  { src: "/caanz_logo_horizontal.webp", alt: "Chartered Accountants ANZ", w: 180, h: 48 },
+  { src: "/tpa-logo.png",               alt: "Tax Practitioners Board",   w: 110, h: 48 },
+  { src: "/Xero-logo-hires-RGB.png",    alt: "Xero",                      w: 104, h: 48 },
+  { src: "/xero-advisor-badge.png",     alt: "Xero Advisor Certified",    w: 48,  h: 48 },
 ];
 
 export default function AccreditationBar() {
@@ -13,8 +13,8 @@ export default function AccreditationBar() {
       className="w-full bg-white"
       style={{ borderTop: "1px solid #e2e6ec" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5">
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
 
           {/* Label */}
           <p
@@ -32,7 +32,7 @@ export default function AccreditationBar() {
           />
 
           {/* Logos */}
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {logos.map((logo) => (
               <div
                 key={logo.alt}
@@ -43,7 +43,7 @@ export default function AccreditationBar() {
                   src={logo.src}
                   alt={logo.alt}
                   fill
-                  className="object-contain object-left"
+                  className="object-contain object-center"
                   sizes={`${logo.w}px`}
                 />
               </div>
