@@ -6,7 +6,8 @@ import ScrollReveal from "@/components/ScrollReveal";
 import InsightsCarousel from "@/components/InsightsCarousel";
 import GradientCard from "@/components/ui/GradientCard";
 import CheckItem from "@/components/ui/CheckItem";
-import { CheckCircle, Calculator, TrendingUp, Landmark } from "lucide-react";
+import { Calculator, TrendingUp, Landmark } from "lucide-react";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 /* ─── DATA ─────────────────────────────────────────────── */
 
@@ -49,14 +50,6 @@ const services = [
   },
 ];
 
-const whyItems = [
-  { title: "Chartered Accountant",   sub: "CA ANZ — the gold standard in professional accounting" },
-  { title: "Xero Certified",         sub: "Advisor & Payroll certified for real-time financial visibility" },
-  { title: "Tax Agent & Broker",     sub: "Registered tax agent and licensed mortgage broker in one firm" },
-  { title: "Bilingual Service",      sub: "Fluent in English and Mandarin for Adelaide's diverse community" },
-  { title: "Direct Access",          sub: "No call centres — you speak directly with Sophia every time" },
-  { title: "Proactive Advice",       sub: "We flag opportunities, manage risks and plan your year ahead" },
-];
 
 const credentials = [
   { value: "CA ANZ",   label: "Chartered Accountant" },
@@ -273,95 +266,9 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════════
-          WHY DUWIN
+          TESTIMONIALS
       ═══════════════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-            <ScrollReveal variant="reveal-left">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
-                <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#245e76" }}>
-                  Why Choose Duwin
-                </span>
-              </div>
-              <h2
-                className="font-extrabold leading-[1.12] tracking-[-0.025em] mb-5"
-                style={{ fontFamily: "var(--font-manrope)", color: "#0b0b0b", fontSize: "clamp(1.875rem, 3vw, 2.5rem)" }}
-              >
-                Your financial partner<br />in Adelaide
-              </h2>
-              <p className="leading-[1.78] mb-10" style={{ color: "#6b7585", fontSize: "1rem" }}>
-                At Duwin, we focus on meeting the accounting and financial demands of SMEs
-                and individuals that keep our local economy running. We deliver organised
-                books, useful financial reports and sound business advice that will see
-                your business grow.
-              </p>
-              <div className="space-y-3">
-                {whyItems.map((item) => (
-                  <div key={item.title} className="feature-card flex items-start gap-4 p-4 rounded-xl cursor-default">
-                    <CheckCircle size={18} className="shrink-0 mt-0.5" style={{ color: "#245e76" }} />
-                    <div>
-                      <p className="font-semibold text-[0.9rem]" style={{ color: "#0b0b0b", fontFamily: "var(--font-manrope)" }}>
-                        {item.title}
-                      </p>
-                      <p className="text-[0.8125rem] leading-[1.6] mt-0.5" style={{ color: "#6b7585" }}>
-                        {item.sub}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-10">
-                <Link
-                  href="/about"
-                  className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-white font-semibold text-[0.9375rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                  style={{
-                    background: "#245e76",
-                    boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 6px 20px rgba(36,94,118,.28)",
-                  }}
-                >
-                  Meet Sophia
-                </Link>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal variant="reveal-right">
-              <div className="relative h-[540px] rounded-2xl overflow-hidden">
-                <Image
-                  src="/bg-boardroom.jpg"
-                  alt="Duwin office"
-                  fill
-                  className="object-cover object-center"
-                  sizes="(max-width:1024px) 100vw, 50vw"
-                />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(145deg, rgba(36,94,118,0.28) 0%, rgba(0,0,0,0.08) 100%)" }} />
-                <div
-                  className="absolute bottom-6 left-6 right-6 rounded-xl p-5 backdrop-blur-md"
-                  style={{ background: "rgba(36,94,118,0.90)", border: "1px solid rgba(255,255,255,0.12)", boxShadow: "0 8px 32px rgba(0,0,0,0.20)" }}
-                >
-                  <svg width="20" height="14" viewBox="0 0 20 14" fill="rgba(255,255,255,0.3)" aria-hidden className="mb-3">
-                    <path d="M0 14V8.4C0 5.6.9 3.3 2.7 1.5 4.5.5 6.6 0 9 0v2.8c-1.6 0-2.9.5-3.9 1.4C4.1 5.1 3.6 6.3 3.6 7.8V9H7V14H0zm11 0V8.4c0-2.8.9-5.1 2.7-6.9C15.5.5 17.6 0 20 0v2.8c-1.6 0-2.9.5-3.9 1.4-1 .9-1.5 2.1-1.5 3.6V9H18V14h-7z"/>
-                  </svg>
-                  <p className="text-white text-[0.875rem] font-medium leading-[1.6]">
-                    My goal is to minimise financial stress for my clients and optimise their wealth so they can get on with life and enjoy their business.
-                  </p>
-                  <div className="flex items-center gap-3 mt-4">
-                    <div className="w-8 h-8 rounded-full overflow-hidden relative shrink-0">
-                      <Image src="/sophia.png" alt="" fill className="object-cover object-top" />
-                    </div>
-                    <p className="text-[0.75rem] font-semibold" style={{ color: "rgba(255,255,255,0.75)" }}>
-                      Sophia Wang — Founder &amp; Principal
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-
-          </div>
-        </div>
-      </section>
+      <TestimonialsCarousel />
 
       {/* ═══════════════════════════════════════════════
           INSIGHTS
