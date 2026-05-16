@@ -160,15 +160,15 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════
           ABOUT SOPHIA — editorial split
       ═══════════════════════════════════════════════ */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden" style={{ minHeight: 600 }}>
+      <section className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden lg:min-h-[640px]">
 
         {/* Left — full-bleed photo, no border-radius */}
-        <div className="relative" style={{ minHeight: 480 }}>
+        <div className="relative h-[480px] lg:h-auto lg:min-h-full">
           <Image
             src="/sophia-photo.jpg"
             alt="Sophia Wang — Founder & Principal, Duwin Accounting & Finance"
             fill
-            className="object-cover object-center"
+            className="object-cover object-top"
             sizes="(max-width:1024px) 100vw, 50vw"
           />
           {/* Subtle gradient at bottom for readability */}
