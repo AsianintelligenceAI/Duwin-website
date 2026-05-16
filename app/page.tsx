@@ -75,6 +75,96 @@ export default function Home() {
       <AccreditationBar />
 
       {/* ═══════════════════════════════════════════════
+          SERVICES
+      ═══════════════════════════════════════════════ */}
+      <section className="py-28 px-6" style={{ background: "#f8f9fb" }}>
+        <div className="max-w-7xl mx-auto">
+
+          <ScrollReveal className="mb-14">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
+              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#245e76" }}>
+                What We Do
+              </span>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+              <h2
+                className="font-extrabold leading-[1.12] tracking-[-0.025em]"
+                style={{ fontFamily: "var(--font-manrope)", color: "#0b0b0b", fontSize: "clamp(1.875rem, 3vw, 2.5rem)" }}
+              >
+                Comprehensive financial services<br className="hidden sm:block" /> under one roof
+              </h2>
+              <Link
+                href="/services"
+                className="shrink-0 text-[0.875rem] font-semibold inline-flex items-center gap-1.5 group"
+                style={{ color: "#245e76" }}
+              >
+                View all services
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
+                  className="transition-transform duration-200 group-hover:translate-x-1">
+                  <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </Link>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {services.map((s, i) => (
+              <ScrollReveal
+                key={s.title}
+                delay={([`delay-100`, `delay-200`, `delay-300`] as const)[i]}
+              >
+                <GradientCard className="flex flex-col overflow-hidden">
+                  {/* Coloured header panel */}
+                  <div
+                    className="relative flex items-center justify-center h-[110px] overflow-hidden flex-shrink-0"
+                    style={{ background: s.gradient }}
+                  >
+                    <span
+                      className="absolute right-5 top-1/2 -translate-y-1/2 font-extrabold select-none pointer-events-none leading-none"
+                      style={{ fontSize: "5rem", color: "rgba(255,255,255,0.10)", fontFamily: "var(--font-manrope)" }}
+                    >
+                      {s.number}
+                    </span>
+                    <s.icon size={32} strokeWidth={1.5} className="text-white relative z-10" />
+                  </div>
+
+                  {/* Body */}
+                  <div className="flex flex-col flex-1 p-7">
+                    <h3
+                      className="font-extrabold text-[1.125rem] leading-[1.25] mb-2.5 tracking-[-0.015em]"
+                      style={{ fontFamily: "var(--font-manrope)", color: "#0b0b0b" }}
+                    >
+                      {s.title}
+                    </h3>
+                    <p className="text-[0.875rem] leading-[1.65] mb-5" style={{ color: "#6b7585" }}>
+                      {s.description}
+                    </p>
+                    <ul className="space-y-2 mb-6 flex-1">
+                      {s.items.map((item) => (
+                        <CheckItem key={item}>{item}</CheckItem>
+                      ))}
+                    </ul>
+                    <Link
+                      href={s.href}
+                      className="inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded"
+                      style={{ color: "#245e76" }}
+                    >
+                      Explore service
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
+                        className="transition-transform duration-150 group-hover/link:translate-x-1">
+                        <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </Link>
+                  </div>
+                </GradientCard>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════
           ABOUT SOPHIA — editorial split
       ═══════════════════════════════════════════════ */}
       <section className="grid grid-cols-1 lg:grid-cols-2 overflow-hidden" style={{ minHeight: 600 }}>
@@ -180,96 +270,6 @@ export default function Home() {
 
           </div>
         </ScrollReveal>
-      </section>
-
-      {/* ═══════════════════════════════════════════════
-          SERVICES
-      ═══════════════════════════════════════════════ */}
-      <section className="py-28 px-6" style={{ background: "#f8f9fb" }}>
-        <div className="max-w-7xl mx-auto">
-
-          <ScrollReveal className="mb-14">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
-              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#245e76" }}>
-                What We Do
-              </span>
-            </div>
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-              <h2
-                className="font-extrabold leading-[1.12] tracking-[-0.025em]"
-                style={{ fontFamily: "var(--font-manrope)", color: "#0b0b0b", fontSize: "clamp(1.875rem, 3vw, 2.5rem)" }}
-              >
-                Comprehensive financial services<br className="hidden sm:block" /> under one roof
-              </h2>
-              <Link
-                href="/services"
-                className="shrink-0 text-[0.875rem] font-semibold inline-flex items-center gap-1.5 group"
-                style={{ color: "#245e76" }}
-              >
-                View all services
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
-                  className="transition-transform duration-200 group-hover:translate-x-1">
-                  <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </Link>
-            </div>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {services.map((s, i) => (
-              <ScrollReveal
-                key={s.title}
-                delay={([`delay-100`, `delay-200`, `delay-300`] as const)[i]}
-              >
-                <GradientCard className="flex flex-col overflow-hidden">
-                  {/* Coloured header panel */}
-                  <div
-                    className="relative flex items-center justify-center h-[110px] overflow-hidden flex-shrink-0"
-                    style={{ background: s.gradient }}
-                  >
-                    <span
-                      className="absolute right-5 top-1/2 -translate-y-1/2 font-extrabold select-none pointer-events-none leading-none"
-                      style={{ fontSize: "5rem", color: "rgba(255,255,255,0.10)", fontFamily: "var(--font-manrope)" }}
-                    >
-                      {s.number}
-                    </span>
-                    <s.icon size={32} strokeWidth={1.5} className="text-white relative z-10" />
-                  </div>
-
-                  {/* Body */}
-                  <div className="flex flex-col flex-1 p-7">
-                    <h3
-                      className="font-extrabold text-[1.125rem] leading-[1.25] mb-2.5 tracking-[-0.015em]"
-                      style={{ fontFamily: "var(--font-manrope)", color: "#0b0b0b" }}
-                    >
-                      {s.title}
-                    </h3>
-                    <p className="text-[0.875rem] leading-[1.65] mb-5" style={{ color: "#6b7585" }}>
-                      {s.description}
-                    </p>
-                    <ul className="space-y-2 mb-6 flex-1">
-                      {s.items.map((item) => (
-                        <CheckItem key={item}>{item}</CheckItem>
-                      ))}
-                    </ul>
-                    <Link
-                      href={s.href}
-                      className="inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded"
-                      style={{ color: "#245e76" }}
-                    >
-                      Explore service
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
-                        className="transition-transform duration-150 group-hover/link:translate-x-1">
-                        <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
-                    </Link>
-                  </div>
-                </GradientCard>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* ═══════════════════════════════════════════════
