@@ -6,8 +6,8 @@ interface GradientCardProps {
   hover?: boolean;
 }
 
-const shadowCard = "0 1px 2px rgba(36,94,118,.06), 0 4px 12px rgba(36,94,118,.10), 0 12px 32px rgba(36,94,118,.08)";
-const shadowFloat = "0 4px 8px rgba(36,94,118,.08), 0 16px 48px rgba(36,94,118,.14), 0 32px 64px rgba(7,25,34,.12)";
+const shadowCard = "0 1px 2px rgba(12,60,96,.06), 0 4px 12px rgba(12,60,96,.10), 0 12px 32px rgba(12,60,96,.08)";
+const shadowFloat = "0 4px 8px rgba(12,60,96,.08), 0 16px 48px rgba(12,60,96,.14), 0 32px 64px rgba(7,25,34,.12)";
 
 export default function GradientCard({ children, className = "", hover = true }: GradientCardProps) {
   return (

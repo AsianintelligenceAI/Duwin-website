@@ -21,7 +21,7 @@ const services = [
     href: "/services/accounting-tax",
     items: ["Personal & Business Tax", "SMSF Tax Returns", "BAS & IAS Lodgement", "Bookkeeping & Payroll"],
     icon: Calculator,
-    gradient: "linear-gradient(135deg, #245e76 0%, #1c4d62 100%)",
+    gradient: "linear-gradient(135deg, #0c3c60 0%, #0a3050 100%)",
     number: "01",
   },
   {
@@ -33,7 +33,7 @@ const services = [
     href: "/services/business-advisory",
     items: ["Government Grant Access", "Due Diligence", "Business Structuring", "Tax Planning"],
     icon: TrendingUp,
-    gradient: "linear-gradient(135deg, #0e2b38 0%, #245e76 100%)",
+    gradient: "linear-gradient(135deg, #0c3c60 0%, #147285 100%)",
     number: "02",
   },
   {
@@ -45,7 +45,7 @@ const services = [
     href: "/services/financial-services",
     items: ["Home & Investment Loans", "Commercial Loans", "Refinancing", "Construction Loans"],
     icon: Landmark,
-    gradient: "linear-gradient(135deg, #1c4d62 0%, #3579a0 100%)",
+    gradient: "linear-gradient(135deg, #0a3050 0%, #39729b 100%)",
     number: "03",
   },
 ];
@@ -75,8 +75,8 @@ export default function Home() {
 
           <ScrollReveal className="mb-14">
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
-              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#245e76" }}>
+              <span className="w-6 h-px inline-block" style={{ background: "#1eabc7" }} />
+              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#0c3c60" }}>
                 What We Do
               </span>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
               <Link
                 href="/services"
                 className="shrink-0 text-[0.875rem] font-semibold inline-flex items-center gap-1.5 group"
-                style={{ color: "#245e76" }}
+                style={{ color: "#0c3c60" }}
               >
                 View all services
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
@@ -141,7 +141,7 @@ export default function Home() {
                     <Link
                       href={s.href}
                       className="inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 rounded"
-                      style={{ color: "#245e76" }}
+                      style={{ color: "#0c3c60" }}
                     >
                       Explore service
                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="flex items-start gap-5 mb-6">
               <div
                 className="shrink-0 mt-2"
-                style={{ width: 3, height: 56, background: "#245e76", borderRadius: 2 }}
+                style={{ width: 3, height: 56, background: "#1eabc7", borderRadius: 2 }}
                 aria-hidden
               />
               <h2
@@ -214,7 +214,7 @@ export default function Home() {
             {/* Role line */}
             <p
               className="text-[0.7rem] font-bold tracking-[0.16em] uppercase mb-8"
-              style={{ color: "#245e76" }}
+              style={{ color: "#0c3c60" }}
             >
               CA ANZ · Registered Tax Agent · Mortgage Broker
             </p>
@@ -232,11 +232,11 @@ export default function Home() {
             {/* Bilingual pill */}
             <div
               className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full mb-10"
-              style={{ background: "#edf4f7", border: "1px solid #c8dde7" }}
+              style={{ background: "#e8f2f8", border: "1px solid #d1e0eb" }}
             >
-              <span className="text-[0.75rem] font-semibold" style={{ color: "#245e76" }}>English</span>
-              <span style={{ color: "#c8dde7", fontSize: "0.75rem" }}>·</span>
-              <span className="text-[0.75rem] font-semibold" style={{ color: "#245e76" }}>普通话</span>
+              <span className="text-[0.75rem] font-semibold" style={{ color: "#0c3c60" }}>English</span>
+              <span style={{ color: "#d1e0eb", fontSize: "0.75rem" }}>·</span>
+              <span className="text-[0.75rem] font-semibold" style={{ color: "#0c3c60" }}>普通话</span>
             </div>
 
             {/* Ghost CTA */}
@@ -244,7 +244,7 @@ export default function Home() {
               <Link
                 href="/about"
                 className="inline-flex items-center gap-2 text-[0.875rem] font-semibold group"
-                style={{ color: "#245e76" }}
+                style={{ color: "#0c3c60" }}
               >
                 Full profile
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden
@@ -255,7 +255,7 @@ export default function Home() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-white text-[0.875rem] font-semibold"
-                style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 4px 14px rgba(36,94,118,.28)" }}
+                style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(30,171,199,.20), 0 4px 14px rgba(30,171,199,.30)" }}
               >
                 Book a Consultation
               </Link>
@@ -279,7 +279,7 @@ export default function Home() {
           CREDENTIALS BAR
       ═══════════════════════════════════════════════ */}
       <ScrollReveal variant="reveal-scale">
-        <section className="relative overflow-hidden py-16 px-6" style={{ background: "#245e76" }}>
+        <section className="relative overflow-hidden py-16 px-6" style={{ background: "#1eabc7" }}>
           <svg aria-hidden className="absolute inset-0 w-full h-full opacity-[0.04] pointer-events-none">
             <defs>
               <pattern id="cred-dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -315,15 +315,15 @@ export default function Home() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(14,43,56,0.92) 0%, rgba(11,11,11,0.82) 100%)" }} />
             <div
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
-              style={{ background: "radial-gradient(ellipse, rgba(36,94,118,0.35) 0%, transparent 70%)", filter: "blur(60px)" }}
+              style={{ background: "radial-gradient(ellipse, rgba(12,60,96,0.35) 0%, transparent 70%)", filter: "blur(60px)" }}
               aria-hidden
             />
           </div>
           <div className="relative max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="h-px w-16" style={{ background: "linear-gradient(90deg, transparent, #0d89bf)" }} aria-hidden />
-              <span className="text-[0.65rem] font-bold tracking-[0.20em] uppercase" style={{ color: "#0d89bf" }}>Get Started</span>
-              <div className="h-px w-16" style={{ background: "linear-gradient(90deg, #0d89bf, transparent)" }} aria-hidden />
+              <div className="h-px w-16" style={{ background: "linear-gradient(90deg, transparent, #1eabc7)" }} aria-hidden />
+              <span className="text-[0.65rem] font-bold tracking-[0.20em] uppercase" style={{ color: "#1eabc7" }}>Get Started</span>
+              <div className="h-px w-16" style={{ background: "linear-gradient(90deg, #1eabc7, transparent)" }} aria-hidden />
             </div>
             <h2
               className="font-extrabold text-white leading-[1.08] tracking-[-0.03em] mb-6"
@@ -339,7 +339,7 @@ export default function Home() {
               <Link
                 href="/contact"
                 className="btn-cta btn-glow inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white font-semibold text-[1rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-                style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.30), 0 8px 24px rgba(36,94,118,.50)" }}
+                style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(30,171,199,.30), 0 8px 24px rgba(30,171,199,.50)" }}
               >
                 Book a Free Consultation
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>

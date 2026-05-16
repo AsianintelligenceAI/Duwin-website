@@ -134,7 +134,7 @@ export default function FinancialServicesPage() {
             </p>
             <div
               className="rounded-2xl p-7 bg-brand-50 border border-brand-100"
-              style={{ borderTop: "4px solid #245e76" }}
+              style={{ borderTop: "4px solid #0c3c60" }}
             >
               <p className="text-neutral-900 font-bold mb-4 text-[0.9375rem]">Why use Duwin for lending?</p>
               <ul className="space-y-3">

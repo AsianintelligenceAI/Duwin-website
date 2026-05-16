@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <AuroraBackground
       className="pt-[72px] overflow-hidden block"
-      style={{ background: "#edf4f7", minHeight: "100vh" }}
+      style={{ background: "#e8f2f8", minHeight: "100vh" }}
       showRadialGradient={true}
     >
       {/* ── Ambient gradient blobs ── */}
@@ -15,14 +15,14 @@ export default function HeroSection() {
         <div
           className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full opacity-[0.07]"
           style={{
-            background: "radial-gradient(circle, #245e76 0%, transparent 70%)",
+            background: "radial-gradient(circle, #0c3c60 0%, transparent 70%)",
             filter: "blur(60px)",
           }}
         />
         <div
           className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full opacity-[0.06]"
           style={{
-            background: "radial-gradient(circle, #0d89bf 0%, transparent 70%)",
+            background: "radial-gradient(circle, #1eabc7 0%, transparent 70%)",
             filter: "blur(50px)",
           }}
         />
@@ -32,7 +32,7 @@ export default function HeroSection() {
         >
           <defs>
             <pattern id="hero-grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
-              <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#245e76" strokeWidth="0.5" />
+              <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#0c3c60" strokeWidth="0.5" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#hero-grid)" />
@@ -54,10 +54,10 @@ export default function HeroSection() {
               style={{ animation: "fadeIn 0.5s ease forwards", opacity: 0, animationDelay: "100ms" }}
             >
               <div className="flex items-center gap-1.5">
-                <span className="inline-block w-6 h-px" style={{ background: "#245e76" }} />
+                <span className="inline-block w-6 h-px" style={{ background: "#1eabc7" }} />
                 <span
                   className="text-[0.7rem] font-bold tracking-[0.18em] uppercase"
-                  style={{ color: "#245e76" }}
+                  style={{ color: "#0c3c60" }}
                 >
                   Adelaide&apos;s Trusted Accountants
                 </span>
@@ -110,8 +110,8 @@ export default function HeroSection() {
                 href="/contact"
                 className="btn-primary btn-glow inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-white font-semibold text-[0.9375rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                 style={{
-                  background: "#245e76",
-                  boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 6px 20px rgba(36,94,118,.28)",
+                  background: "#1eabc7",
+                  boxShadow: "0 1px 2px rgba(30,171,199,.25), 0 6px 20px rgba(30,171,199,.35)",
                 }}
               >
                 Book a Free Consultation
@@ -122,7 +122,7 @@ export default function HeroSection() {
               <Link
                 href="/services"
                 className="btn-outline inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-[0.9375rem] border focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                style={{ color: "#245e76", borderColor: "#c8dde7", background: "transparent" }}
+                style={{ color: "#0c3c60", borderColor: "#d1e0eb", background: "transparent" }}
               >
                 Explore Our Services
               </Link>
@@ -193,9 +193,9 @@ export default function HeroSection() {
                 className="px-4 py-3 rounded-xl text-xs font-semibold backdrop-blur-sm"
                 style={{
                   background: "rgba(255,255,255,0.88)",
-                  color: "#245e76",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.10), 0 8px 24px rgba(36,94,118,0.12)",
-                  border: "1px solid rgba(36,94,118,0.12)",
+                  color: "#0c3c60",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.10), 0 8px 24px rgba(12,60,96,0.12)",
+                  border: "1px solid rgba(12,60,96,0.12)",
                 }}
               >
                 <span style={{ display: "block", fontSize: "0.65rem", color: "#9ba5b4", marginBottom: 2, textTransform: "uppercase", letterSpacing: "0.1em" }}>
@@ -225,7 +225,7 @@ export default function HeroSection() {
         <div
           className="w-px h-10"
           style={{
-            background: "linear-gradient(to bottom, #245e76, transparent)",
+            background: "linear-gradient(to bottom, #0c3c60, transparent)",
             animation: "float 2s ease-in-out infinite",
           }}
         />

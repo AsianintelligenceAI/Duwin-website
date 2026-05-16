@@ -272,7 +272,7 @@ export default function ContactForm() {
         disabled={formState === "submitting"}
         className="mt-6 w-full inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 active:bg-brand-700 disabled:opacity-60 text-white font-semibold px-6 py-3.5 rounded-lg text-[0.9375rem] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 active:scale-[0.98]"
         style={{
-          boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 4px 12px rgba(36,94,118,.30)",
+          boxShadow: "0 1px 2px rgba(12,60,96,.20), 0 4px 12px rgba(12,60,96,.30)",
           transition: "transform 200ms cubic-bezier(0.34,1.56,0.64,1), box-shadow 200ms ease",
         }}
         aria-busy={formState === "submitting"}

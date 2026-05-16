@@ -64,8 +64,8 @@ export default function ContactPage() {
               <div
                 className="bg-white rounded-2xl p-8 sm:p-10"
                 style={{
-                  boxShadow: "0 4px 8px rgba(36,94,118,.08), 0 16px 48px rgba(36,94,118,.14), 0 32px 64px rgba(7,25,34,.12)",
-                  borderTop: "4px solid #245e76",
+                  boxShadow: "0 4px 8px rgba(12,60,96,.08), 0 16px 48px rgba(12,60,96,.14), 0 32px 64px rgba(7,25,34,.12)",
+                  borderTop: "4px solid #0c3c60",
                 }}
               >
                 <h2
@@ -87,8 +87,8 @@ export default function ContactPage() {
               <div
                 className="bg-white rounded-2xl p-8"
                 style={{
-                  boxShadow: "0 1px 2px rgba(36,94,118,.06), 0 4px 12px rgba(36,94,118,.10), 0 12px 32px rgba(36,94,118,.08)",
-                  border: "1px solid rgba(36,94,118,.10)",
+                  boxShadow: "0 1px 2px rgba(12,60,96,.06), 0 4px 12px rgba(12,60,96,.10), 0 12px 32px rgba(12,60,96,.08)",
+                  border: "1px solid rgba(12,60,96,.10)",
                 }}
               >
                 <h2
@@ -129,7 +129,7 @@ export default function ContactPage() {
               </div>
 
               {/* Map embed */}
-              <div className="rounded-2xl overflow-hidden border border-brand-100" style={{ boxShadow: "0 1px 2px rgba(36,94,118,.06), 0 4px 12px rgba(36,94,118,.10)" }}>
+              <div className="rounded-2xl overflow-hidden border border-brand-100" style={{ boxShadow: "0 1px 2px rgba(12,60,96,.06), 0 4px 12px rgba(12,60,96,.10)" }}>
                 <iframe
                   title="Duwin office location"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.2!2d138.6035!3d-34.9245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0cf4ebb2c5b4b%3A0x1!2s147+Pirie+St%2C+Adelaide+SA+5000!5e0!3m2!1sen!2sau!4v1"
@@ -146,7 +146,7 @@ export default function ContactPage() {
               <div
                 className="rounded-2xl p-6 text-white"
                 style={{
-                  background: "linear-gradient(135deg, #0e2b38 0%, #245e76 100%)",
+                  background: "linear-gradient(135deg, #0c3c60 0%, #0c3c60 100%)",
                 }}
               >
                 <p className="font-bold text-[0.9375rem] mb-4 text-white">Professional Memberships</p>

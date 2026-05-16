@@ -173,7 +173,7 @@ export default function TestimonialsCarousel() {
       {/* Ambient glow */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, rgba(36,94,118,0.22) 0%, transparent 70%)", filter: "blur(60px)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(12,60,96,0.22) 0%, transparent 70%)", filter: "blur(60px)" }}
         aria-hidden
       />
 

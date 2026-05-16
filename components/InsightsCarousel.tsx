@@ -225,10 +225,10 @@ export default function InsightsCarousel() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
+              <span className="w-6 h-px inline-block" style={{ background: "#1eabc7" }} />
               <span
                 className="text-[0.7rem] font-bold tracking-[0.18em] uppercase"
-                style={{ color: "#245e76" }}
+                style={{ color: "#0c3c60" }}
               >
                 Insights
               </span>
@@ -247,7 +247,7 @@ export default function InsightsCarousel() {
           <Link
             href="/insights"
             className="shrink-0 text-[0.875rem] font-semibold inline-flex items-center gap-1.5 group"
-            style={{ color: "#245e76" }}
+            style={{ color: "#0c3c60" }}
           >
             View all articles
             <svg
@@ -287,7 +287,7 @@ export default function InsightsCarousel() {
                 height: "100%",
                 background: "#ffffff",
                 border: "1px solid #e2e6ec",
-                boxShadow: "0 1px 3px rgba(36,94,118,.04), 0 6px 24px rgba(36,94,118,.09)",
+                boxShadow: "0 1px 3px rgba(12,60,96,.04), 0 6px 24px rgba(12,60,96,.09)",
               }}
             >
               {/* Top gradient bar */}
@@ -295,7 +295,7 @@ export default function InsightsCarousel() {
                 className="shrink-0"
                 style={{
                   height: 3,
-                  background: "linear-gradient(90deg, #245e76, #0d89bf)",
+                  background: "linear-gradient(90deg, #0c3c60, #1eabc7)",
                 }}
               />
 
@@ -303,7 +303,7 @@ export default function InsightsCarousel() {
                 {/* Category pill */}
                 <span
                   className="self-start text-[0.65rem] font-bold tracking-[0.12em] uppercase px-2.5 py-1 rounded-full mb-4 shrink-0"
-                  style={{ background: "#edf4f7", color: "#245e76" }}
+                  style={{ background: "#e8f2f8", color: "#0c3c60" }}
                 >
                   {item.category}
                 </span>
@@ -341,7 +341,7 @@ export default function InsightsCarousel() {
                   <Link
                     href={item.href}
                     className="inline-flex items-center gap-1 text-[0.75rem] font-semibold"
-                    style={{ color: "#245e76" }}
+                    style={{ color: "#0c3c60" }}
                   >
                     Read more
                     <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -368,7 +368,7 @@ export default function InsightsCarousel() {
           <div
             ref={fillRef}
             className="absolute inset-y-0 left-0 rounded-full pointer-events-none"
-            style={{ background: "linear-gradient(90deg, #245e76, #0d89bf)", width: 0 }}
+            style={{ background: "linear-gradient(90deg, #0c3c60, #1eabc7)", width: 0 }}
           />
           {/* Thumb — draggable pill */}
           <div
@@ -377,8 +377,8 @@ export default function InsightsCarousel() {
             style={{
               width: 52,
               height: 22,
-              background: "#245e76",
-              boxShadow: "0 2px 8px rgba(36,94,118,.45), 0 0 0 3px rgba(36,94,118,.12)",
+              background: "#1eabc7",
+              boxShadow: "0 2px 8px rgba(12,60,96,.45), 0 0 0 3px rgba(12,60,96,.12)",
               cursor: "grab",
               left: 0,
             }}

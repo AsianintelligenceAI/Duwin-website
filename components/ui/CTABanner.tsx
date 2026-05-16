@@ -23,9 +23,9 @@ export default function CTABanner({
       className="relative overflow-hidden py-20 px-6"
       style={{
         background:
-          "radial-gradient(ellipse 80% 50% at 20% 40%, rgba(36,94,118,.22) 0%, transparent 60%)," +
+          "radial-gradient(ellipse 80% 50% at 20% 40%, rgba(12,60,96,.22) 0%, transparent 60%)," +
           "radial-gradient(ellipse 60% 80% at 80% 70%, rgba(14,43,56,.45) 0%, transparent 55%)," +
-          "linear-gradient(160deg, #071922 0%, #0e2b38 50%, #153c4d 100%)",
+          "linear-gradient(160deg, #040e20 0%, #0c3c60 50%, #082344 100%)",
       }}
     >
       <div className="relative z-10 max-w-4xl mx-auto text-center">

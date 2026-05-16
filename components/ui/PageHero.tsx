@@ -20,9 +20,9 @@ export default function PageHero({ eyebrow, title, subtitle, breadcrumbs, childr
       className="relative overflow-hidden pt-32 pb-20 px-6"
       style={{
         background:
-          "radial-gradient(ellipse 70% 60% at 10% 50%, rgba(36,94,118,.20) 0%, transparent 60%)," +
+          "radial-gradient(ellipse 70% 60% at 10% 50%, rgba(12,60,96,.20) 0%, transparent 60%)," +
           "radial-gradient(ellipse 50% 70% at 85% 60%, rgba(14,43,56,.35) 0%, transparent 55%)," +
-          "linear-gradient(150deg, #071922 0%, #0e2b38 60%, #153c4d 100%)",
+          "linear-gradient(150deg, #040e20 0%, #0c3c60 60%, #082344 100%)",
       }}
     >
       <div className="relative z-10 max-w-6xl mx-auto">

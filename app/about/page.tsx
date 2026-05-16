@@ -27,15 +27,15 @@ export default function AboutPage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="relative pt-[72px] overflow-hidden" style={{ background: "#0e2b38", minHeight: 320 }}>
+      <section className="relative pt-[72px] overflow-hidden" style={{ background: "#0c3c60", minHeight: 320 }}>
         <div className="absolute inset-0">
           <Image src="/bg-team.jpg" alt="" fill className="object-cover object-center opacity-25" aria-hidden />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(14,43,56,0.97) 0%, rgba(36,94,118,0.70) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(14,43,56,0.97) 0%, rgba(12,60,96,0.70) 100%)" }} />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-1 h-4 rounded-full" style={{ background: "#0d89bf" }} aria-hidden />
-            <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#0d89bf" }}>
+            <div className="w-1 h-4 rounded-full" style={{ background: "#1eabc7" }} aria-hidden />
+            <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#1eabc7" }}>
               Meet the Principal
             </span>
           </div>
@@ -60,12 +60,12 @@ export default function AboutPage() {
             <div className="relative">
               <div
                 className="absolute -top-3 -left-3 w-full h-full rounded-2xl"
-                style={{ background: "#edf4f7" }}
+                style={{ background: "#e8f2f8" }}
                 aria-hidden
               />
               <div
                 className="relative rounded-2xl overflow-hidden"
-                style={{ boxShadow: "0 8px 32px rgba(36,94,118,.16)" }}
+                style={{ boxShadow: "0 8px 32px rgba(12,60,96,.16)" }}
               >
                 <Image
                   src="/sophia-photo.jpg"
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 {/* Bilingual badge on portrait */}
                 <div
                   className="absolute bottom-4 left-4 right-4 rounded-xl px-4 py-3 backdrop-blur-md"
-                  style={{ background: "rgba(36,94,118,0.92)", border: "1px solid rgba(255,255,255,0.12)" }}
+                  style={{ background: "rgba(12,60,96,0.92)", border: "1px solid rgba(255,255,255,0.12)" }}
                 >
                   <p className="text-white font-bold text-[0.9375rem]" style={{ fontFamily: "var(--font-manrope)" }}>
                     Sophia Wang
@@ -97,18 +97,18 @@ export default function AboutPage() {
               {/* Bilingual pill — prominent */}
               <div
                 className="inline-flex items-center gap-3 px-4 py-2.5 rounded-xl mb-8"
-                style={{ background: "#edf4f7", border: "1px solid #c8dde7" }}
+                style={{ background: "#e8f2f8", border: "1px solid #d1e0eb" }}
               >
-                <span className="text-[1rem] font-bold" style={{ color: "#245e76", fontFamily: "var(--font-manrope)" }}>
+                <span className="text-[1rem] font-bold" style={{ color: "#0c3c60", fontFamily: "var(--font-manrope)" }}>
                   English
                 </span>
-                <span style={{ color: "#c8dde7" }}>·</span>
-                <span className="text-[1rem] font-bold" style={{ color: "#245e76", fontFamily: "var(--font-manrope)" }}>
+                <span style={{ color: "#d1e0eb" }}>·</span>
+                <span className="text-[1rem] font-bold" style={{ color: "#0c3c60", fontFamily: "var(--font-manrope)" }}>
                   普通话
                 </span>
                 <span
                   className="text-[0.65rem] font-bold tracking-[0.12em] uppercase px-2 py-0.5 rounded-full ml-1"
-                  style={{ background: "#245e76", color: "#ffffff" }}
+                  style={{ background: "#1eabc7", color: "#ffffff" }}
                 >
                   Bilingual
                 </span>
@@ -133,10 +133,10 @@ export default function AboutPage() {
                     style={{
                       background: "#f8f9fb",
                       border: "1px solid #e2e6ec",
-                      borderTop: "3px solid #245e76",
+                      borderTop: "3px solid #0c3c60",
                     }}
                   >
-                    <BadgeCheck size={16} className="mx-auto mb-1.5" style={{ color: "#245e76" }} />
+                    <BadgeCheck size={16} className="mx-auto mb-1.5" style={{ color: "#0c3c60" }} />
                     <p className="font-bold text-[0.8125rem]" style={{ color: "#0b0b0b", fontFamily: "var(--font-manrope)" }}>
                       {c.label}
                     </p>
@@ -148,7 +148,7 @@ export default function AboutPage() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-white font-semibold text-[0.9375rem]"
-                style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 6px 20px rgba(36,94,118,.28)" }}
+                style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(12,60,96,.20), 0 6px 20px rgba(12,60,96,.28)" }}
               >
                 Book a Consultation
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -161,7 +161,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── BILINGUAL FEATURE ── */}
-      <section className="relative overflow-hidden py-20 px-6" style={{ background: "#0e2b38" }}>
+      <section className="relative overflow-hidden py-20 px-6" style={{ background: "#0c3c60" }}>
         {/* Decorative Chinese characters */}
         <div
           className="absolute right-8 top-1/2 -translate-y-1/2 font-bold leading-none select-none pointer-events-none hidden lg:block"
@@ -181,7 +181,7 @@ export default function AboutPage() {
             <div>
               <p
                 className="text-[0.7rem] font-bold tracking-[0.18em] uppercase mb-4"
-                style={{ color: "#0d89bf" }}
+                style={{ color: "#1eabc7" }}
               >
                 Bilingual Service &nbsp;·&nbsp; 双语服务
               </p>
@@ -191,7 +191,7 @@ export default function AboutPage() {
               >
                 We speak your language.
                 <br />
-                <span style={{ color: "#5bc8e8" }}>我们说中文。</span>
+                <span style={{ color: "#6ea4ca" }}>我们说中文。</span>
               </h2>
               <p className="leading-[1.75] max-w-[500px]" style={{ color: "rgba(255,255,255,0.58)", fontSize: "1rem" }}>
                 Sophia provides all accounting, tax and financial services in both English and Mandarin (普通话).
@@ -214,7 +214,7 @@ export default function AboutPage() {
                 className="px-6 py-4 rounded-2xl text-center"
                 style={{ background: "rgba(13,137,191,0.18)", border: "1px solid rgba(13,137,191,0.30)" }}
               >
-                <p className="font-extrabold text-[1.5rem]" style={{ fontFamily: "var(--font-manrope)", color: "#5bc8e8" }}>
+                <p className="font-extrabold text-[1.5rem]" style={{ fontFamily: "var(--font-manrope)", color: "#6ea4ca" }}>
                   普通话
                 </p>
                 <p className="text-[0.7rem] mt-1" style={{ color: "rgba(255,255,255,0.40)" }}>Mandarin Chinese</p>
@@ -229,11 +229,11 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="flex items-center justify-center gap-2 mb-3">
-              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
-              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#245e76" }}>
+              <span className="w-6 h-px inline-block" style={{ background: "#1eabc7" }} />
+              <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#0c3c60" }}>
                 Our Values
               </span>
-              <span className="w-6 h-px inline-block" style={{ background: "#245e76" }} />
+              <span className="w-6 h-px inline-block" style={{ background: "#1eabc7" }} />
             </div>
             <h2
               className="font-extrabold leading-[1.12] tracking-[-0.025em]"
@@ -250,8 +250,8 @@ export default function AboutPage() {
                 className="bg-white rounded-xl p-7"
                 style={{
                   border: "1px solid #e2e6ec",
-                  borderTop: "3px solid #245e76",
-                  boxShadow: "0 1px 3px rgba(36,94,118,.04)",
+                  borderTop: "3px solid #0c3c60",
+                  boxShadow: "0 1px 3px rgba(12,60,96,.04)",
                 }}
               >
                 <h3
@@ -285,14 +285,14 @@ export default function AboutPage() {
             <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg text-white font-semibold text-[0.9375rem]"
-              style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 6px 20px rgba(36,94,118,.28)" }}
+              style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(12,60,96,.20), 0 6px 20px rgba(12,60,96,.28)" }}
             >
               Book a Free Consultation
             </Link>
             <a
               href="tel:0881216066"
               className="inline-flex items-center gap-2 text-[0.9375rem] font-semibold"
-              style={{ color: "#245e76" }}
+              style={{ color: "#0c3c60" }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11c-.53-1.67-.76-3.4-.59-5.18A2 2 0 014.49 4h3a2 2 0 012 1.72 12.8 12.8 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 11.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.8 12.8 0 002.81.7A2 2 0 0122 18.92z"/>

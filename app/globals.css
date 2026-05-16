@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  /* === DUWIN BRAND === */
-  --color-brand-50:  #edf4f7;
-  --color-brand-100: #c8dde7;
-  --color-brand-200: #93bcd0;
-  --color-brand-300: #5e9ab8;
-  --color-brand-400: #3579a0;
-  --color-brand-500: #245e76;
-  --color-brand-600: #1c4d62;
-  --color-brand-700: #153c4d;
-  --color-brand-800: #0e2b38;
-  --color-brand-900: #071922;
+  /* === DUWIN BRAND (matched to duwin.com.au) === */
+  /* Dark navy: rgb(12,60,96)   = #0c3c60  — headings, dark sections  */
+  /* Teal/cyan: rgb(30,171,199) = #1eabc7  — CTA buttons, accents     */
+  /* Mid blue:  rgb(57,114,155) = #39729b  — secondary brand           */
+  /* Light:     rgb(209,224,235)= #d1e0eb  — backgrounds, borders      */
+  /* Gold:      rgb(222,195,40) = #dec328  — highlight accent          */
 
-  --color-accent-400: #0d89bf;
-  --color-accent-500: #0b76a5;
+  --color-brand-50:  #e8f2f8;
+  --color-brand-100: #d1e0eb;
+  --color-brand-200: #b3c0d3;
+  --color-brand-300: #6ea4ca;
+  --color-brand-400: #39729b;
+  --color-brand-500: #0c3c60;
+  --color-brand-600: #0a3050;
+  --color-brand-700: #082344;
+  --color-brand-800: #061630;
+  --color-brand-900: #040e20;
+
+  --color-accent-400: #1eabc7;
+  --color-accent-500: #147285;
+  --color-accent-gold: #dec328;
 
   --color-neutral-50:  #f8f9fb;
   --color-neutral-100: #f0f2f5;
@@ -93,8 +100,8 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0 0   rgba(36, 94, 118, 0.4); }
-  50%       { box-shadow: 0 0 0 12px rgba(36, 94, 118, 0);  }
+  0%, 100% { box-shadow: 0 0 0 0   rgba(30, 171, 199, 0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(30, 171, 199, 0);  }
 }
 
 @keyframes shimmerSlide {
@@ -163,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :focus-visible {
-  outline: 2px solid #245e76;
+  outline: 2px solid #1eabc7;
   outline-offset: 2px;
   border-radius: 4px;
 }
@@ -177,14 +184,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(36,94,118,.10), 0 24px 48px rgba(36,94,118,.12);
+  box-shadow: 0 8px 16px rgba(12,60,96,.10), 0 24px 48px rgba(12,60,96,.12);
 }
 
 /* Shimmer text */
 .text-shimmer {
   background: linear-gradient(
     90deg,
-    #245e76 0%, #0d89bf 40%, #245e76 60%, #245e76 100%
+    #0c3c60 0%, #1eabc7 40%, #0c3c60 60%, #0c3c60 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -204,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(36,94,118,.25), 0 12px 32px rgba(36,94,118,.35) !important;
+  box-shadow: 0 4px 8px rgba(30,171,199,.30), 0 12px 32px rgba(30,171,199,.40) !important;
 }
 .btn-primary:active { transform: translateY(0) scale(0.98); }
 
@@ -213,8 +220,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 200ms ease, border-color 200ms ease, transform 250ms cubic-bezier(0.22,1,0.36,1);
 }
 .btn-outline:hover {
-  background: #edf4f7 !important;
-  border-color: #245e76 !important;
+  background: #e8f2f8 !important;
+  border-color: #1eabc7 !important;
   transform: translateY(-2px);
 }
 
@@ -224,8 +231,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #f0f2f5;
 }
 .feature-card:hover {
-  border-color: #c8dde7 !important;
-  background: #edf4f7 !important;
+  border-color: #d1e0eb !important;
+  background: #e8f2f8 !important;
 }
 
 /* Glow pulse for CTA button */

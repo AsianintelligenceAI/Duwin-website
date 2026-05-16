@@ -111,7 +111,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li className="flex gap-3 text-[0.875rem]" style={{ color: "#8e8e8e" }}>
-                <MapPin size={15} className="shrink-0 mt-0.5" style={{ color: "#245e76" }} />
+                <MapPin size={15} className="shrink-0 mt-0.5" style={{ color: "#0c3c60" }} />
                 <span>310/147 Pirie St, Adelaide SA 5000<br />(Aurora on Pirie)</span>
               </li>
               <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                   className="flex gap-3 text-[0.875rem] transition-[color] duration-150 hover:text-white"
                   style={{ color: "#8e8e8e" }}
                 >
-                  <Phone size={15} className="shrink-0 mt-0.5" style={{ color: "#245e76" }} />
+                  <Phone size={15} className="shrink-0 mt-0.5" style={{ color: "#0c3c60" }} />
                   <span>(08) 8121 6066</span>
                 </a>
               </li>
@@ -130,12 +130,12 @@ export default function Footer() {
                   className="flex gap-3 text-[0.875rem] transition-[color] duration-150 hover:text-white"
                   style={{ color: "#8e8e8e" }}
                 >
-                  <Mail size={15} className="shrink-0 mt-0.5" style={{ color: "#245e76" }} />
+                  <Mail size={15} className="shrink-0 mt-0.5" style={{ color: "#0c3c60" }} />
                   <span>info@duwin.com.au</span>
                 </a>
               </li>
               <li className="flex gap-3 text-[0.875rem]" style={{ color: "#8e8e8e" }}>
-                <Clock size={15} className="shrink-0 mt-0.5" style={{ color: "#245e76" }} />
+                <Clock size={15} className="shrink-0 mt-0.5" style={{ color: "#0c3c60" }} />
                 <span>Mon – Fri: 9:00am – 5:30pm<br />Sat – Sun: By appointment</span>
               </li>
             </ul>

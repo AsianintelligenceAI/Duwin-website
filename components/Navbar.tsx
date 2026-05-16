@@ -42,7 +42,7 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50"
       style={{
-        background: "#245e76",
+        background: "#1eabc7",
         borderBottom: "1px solid rgba(255,255,255,0.10)",
         boxShadow: scrolled ? "0 2px 16px rgba(7,25,34,0.30)" : "none",
         transition: "box-shadow 300ms ease",
@@ -100,7 +100,7 @@ export default function Navbar() {
                           key={child.href}
                           href={child.href}
                           className="block px-4 py-2 text-[0.875rem] transition-[color] duration-150 hover:bg-neutral-50 hover:text-brand-500 text-neutral-600"
-                          style={pathname === child.href ? { color: "#245e76", fontWeight: 600 } : {}}
+                          style={pathname === child.href ? { color: "#0c3c60", fontWeight: 600 } : {}}
                         >
                           {child.label}
                         </Link>

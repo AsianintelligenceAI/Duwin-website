@@ -27,7 +27,7 @@ export default function PrimaryButton({
     className;
 
   const style = {
-    boxShadow: "0 1px 2px rgba(36,94,118,.20), 0 4px 12px rgba(36,94,118,.30)",
+    boxShadow: "0 1px 2px rgba(12,60,96,.20), 0 4px 12px rgba(12,60,96,.30)",
   };
 
   if (href) {

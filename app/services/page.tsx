@@ -76,8 +76,8 @@ export default function ServicesPage() {
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-20">
           <div className="flex items-center gap-2 mb-5">
-            <div className="w-1 h-4 rounded-full" style={{ background: "#0d89bf" }} aria-hidden />
-            <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#0d89bf" }}>
+            <div className="w-1 h-4 rounded-full" style={{ background: "#1eabc7" }} aria-hidden />
+            <span className="text-[0.7rem] font-bold tracking-[0.18em] uppercase" style={{ color: "#1eabc7" }}>
               Our Services
             </span>
           </div>
@@ -149,7 +149,7 @@ export default function ServicesPage() {
                   <ul className="mb-5 space-y-1">
                     {s.items.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-[0.75rem]" style={{ color: "rgba(255,255,255,0.60)" }}>
-                        <span className="w-1 h-1 rounded-full shrink-0" style={{ background: "#0d89bf" }} />
+                        <span className="w-1 h-1 rounded-full shrink-0" style={{ background: "#1eabc7" }} />
                         {item}
                       </li>
                     ))}
@@ -158,7 +158,7 @@ export default function ServicesPage() {
                     <Link
                       href={s.href}
                       className="inline-flex items-center px-5 py-2 rounded text-white text-[0.75rem] font-bold tracking-[0.06em] uppercase hover:opacity-90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 transition-[opacity,transform] duration-200"
-                      style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.30), 0 4px 12px rgba(36,94,118,.40)" }}
+                      style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(12,60,96,.30), 0 4px 12px rgba(12,60,96,.40)" }}
                     >
                       Learn More
                     </Link>
@@ -192,7 +192,7 @@ export default function ServicesPage() {
             <Link
               href="/contact"
               className="inline-flex items-center px-7 py-3.5 rounded text-white font-bold text-[0.875rem] tracking-[0.06em] uppercase hover:opacity-90 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 transition-[opacity,transform] duration-200"
-              style={{ background: "#245e76", boxShadow: "0 1px 2px rgba(36,94,118,.30), 0 4px 16px rgba(36,94,118,.50)" }}
+              style={{ background: "#1eabc7", boxShadow: "0 1px 2px rgba(12,60,96,.30), 0 4px 16px rgba(12,60,96,.50)" }}
             >
               Book a Free Consultation
             </Link>
