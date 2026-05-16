@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <AuroraBackground
       className="pt-[72px] overflow-hidden block"
-      style={{ background: "#edf4f7", minHeight: "70vh" }}
+      style={{ background: "#edf4f7", minHeight: "100vh" }}
       showRadialGradient={true}
     >
       {/* ── Ambient gradient blobs ── */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div
           className="grid grid-cols-1 lg:grid-cols-[1fr_560px] items-center gap-0 py-12 lg:py-0"
-          style={{ minHeight: "calc(70vh - 72px)" }}
+          style={{ minHeight: "calc(100vh - 72px)" }}
         >
 
           {/* ── Left — text content ── */}
