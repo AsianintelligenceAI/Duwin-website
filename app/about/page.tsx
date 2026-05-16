@@ -68,7 +68,7 @@ export default function AboutPage() {
                 style={{ boxShadow: "0 8px 32px rgba(36,94,118,.16)" }}
               >
                 <Image
-                  src="/sophia.png"
+                  src="/sophia-photo.jpg"
                   alt="Sophia Wang — Principal, Duwin Accounting & Finance"
                   width={420}
                   height={520}
