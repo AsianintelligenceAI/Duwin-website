@@ -2,13 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
-const accreditations = [
-  { src: "/caanz_logo_horizontal.webp", alt: "Chartered Accountants ANZ", w: 210 },
-  { src: "/tpa-logo.png",               alt: "Tax Practitioners Board",   w: 130 },
-  { src: "/Xero-logo-hires-RGB.png",    alt: "Xero",                      w: 120 },
-  { src: "/xero-advisor-badge.png",     alt: "Xero Advisor Certified",    w: 80  },
-];
-
 
 export default function HeroSection() {
   return (
@@ -135,49 +128,6 @@ export default function HeroSection() {
               </Link>
             </div>
 
-            {/* Divider */}
-            <div
-              className="my-9 w-12 h-px"
-              style={{
-                background: "#e2e6ec",
-                animation: "fadeIn 0.5s ease forwards",
-                opacity: 0,
-                animationDelay: "540ms",
-              }}
-            />
-
-            {/* Accreditation logos */}
-            <div
-              style={{
-                animation: "fadeUp 0.6s cubic-bezier(0.22,1,0.36,1) forwards",
-                opacity: 0,
-                animationDelay: "600ms",
-              }}
-            >
-              <p
-                className="text-[0.65rem] font-bold tracking-[0.16em] uppercase mb-4"
-                style={{ color: "#9ba5b4" }}
-              >
-                Accredited &amp; Certified
-              </p>
-              <div className="flex flex-nowrap items-center gap-5">
-                {accreditations.map((a) => (
-                  <div
-                    key={a.alt}
-                    className="relative shrink-0"
-                    style={{ width: a.w, height: 64 }}
-                  >
-                    <Image
-                      src={a.src}
-                      alt={a.alt}
-                      fill
-                      className="object-contain object-left"
-                      sizes={`${a.w}px`}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* ── Right — Sophia portrait panel ── */}

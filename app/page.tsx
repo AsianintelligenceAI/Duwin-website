@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+import AccreditationBar from "@/components/AccreditationBar";
 import ScrollReveal from "@/components/ScrollReveal";
 import InsightsCarousel from "@/components/InsightsCarousel";
 import GradientCard from "@/components/ui/GradientCard";
@@ -71,6 +72,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <AccreditationBar />
 
       {/* ═══════════════════════════════════════════════
           ABOUT SOPHIA — editorial split
